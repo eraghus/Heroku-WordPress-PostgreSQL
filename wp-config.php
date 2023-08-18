@@ -27,20 +27,20 @@ define( 'AWS_ACCESS_KEY_ID', $_ENV["AWS_ACCESS_KEY_ID"]);
 define( 'AWS_SECRET_ACCESS_KEY', $_ENV["AWS_SECRET_ACCESS_KEY"]);  
 
 // ** Heroku Postgres settings - from Heroku Environment ** //
-$db = parse_url($_ENV["DATABASE_URL"]);
+$db = parse_url($_ENV["postgres://zxvvzhhbliwtol:a17ef49476b9a79240db604e29e4a94eed5e8bad715aee3563f058d215a6e0d8@ec2-34-228-248-175.compute-1.amazonaws.com:5432/dfba0quvvf2fa9"]);
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', trim($db["path"],"/"));
+define('DB_NAME', trim($db["dfba0quvvf2fa9"],"/"));
 
 /** MySQL database username */
-define('DB_USER', $db["user"]);
+define('DB_USER', $db["zxvvzhhbliwtol"]);
 
 /** MySQL database password */
-define('DB_PASSWORD', $db["pass"]);
+define('DB_PASSWORD', $db["a17ef49476b9a79240db604e29e4a94eed5e8bad715aee3563f058d215a6e0d8"]);
 
 /** MySQL hostname */
-define('DB_HOST', $db["host"]);
+define('DB_HOST', $db["ec2-34-228-248-175.compute-1.amazonaws.com"]);
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -57,14 +57,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         $_ENV["AUTH_KEY"]);
-define('SECURE_AUTH_KEY',  $_ENV["SECURE_AUTH_KEY"]);
-define('LOGGED_IN_KEY',    $_ENV["LOGGED_IN_KEY"]);
-define('NONCE_KEY',        $_ENV["NONCE_KEY"]);
-define('AUTH_SALT',        $_ENV["AUTH_SALT"]);
-define('SECURE_AUTH_SALT', $_ENV["SECURE_AUTH_SALT"]);
-define('LOGGED_IN_SALT',   $_ENV["LOGGED_IN_SALT"]);
-define('NONCE_SALT',       $_ENV["NONCE_SALT"]);
+define('AUTH_KEY',         ')}#+*xsatb*9l@[8=YZW6J-t%TT2D?vb:BX-*gaU,Mg>$sOh1VS=*Tr>L?lCN^w,');
+define('SECURE_AUTH_KEY',  '`P#:F)uQsfVY2OXPZ.OCoGSkY3N|?^o[+NWBFa!0{e~R-o &WAOgAMS[:v kLP48');
+define('LOGGED_IN_KEY',    '9DQ?]~KnB<Vi]4>E:8(N_pP2,S%.e|qWe6DFUei&&;l}7R-QG#W?)#3WEn/|Xbs{');
+define('NONCE_KEY',        '8<|yme@_(LfKP_@fGd=q]FiI-c!~f 1z3]X#|4L-F8B??hI8s+[tL01Iy-l+H l_');
+define('AUTH_SALT',        '`G Q4ZCGKx[G0*97m>6!N:bkc>2N-uP+,:]bF}PqJ#K.B4PCo1z}&KiV!3F-YG)x');
+define('SECURE_AUTH_SALT', '<@R@rt!.XxEX%gbP/i|0L+qz8>eE^[a1vU?2L- rZ/=VGrD|3JX*(f/rmIXO_uBe');
+define('LOGGED_IN_SALT',   'cX2%xPm70QCL-e/)~O||ide-%tc*`-Ct(TVq(`E?BeU9S+a9Z|+.)B|&k0`fx.:^');
+define('NONCE_SALT',       'Hky}gka)Q0a2A+|gW:k&+P-=L>(KYD4IDf_zIHp2;g.fCdxrmp%jm@}^4bW)t{|!');
 
 /**#@-*/
 
